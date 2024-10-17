@@ -30,7 +30,8 @@
 			"recommended": true,
 			"complexity": {
 				"noForEach": "off",
-				"noThisInStatic": "off"
+				"noThisInStatic": "off",
+				"useOptionalChain": "off"
 			}
 		}
 	},
