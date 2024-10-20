@@ -22,7 +22,7 @@ class AlunoController {
 				attributes: ['url', 'filename'],
 			},
 		});
-		res.json('ok');
+		res.json(alunos);
 	}
 
 	async store(req, res) {
