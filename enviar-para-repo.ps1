@@ -12,12 +12,12 @@ git commit -m "$commit"
 
 git push origin main
 
-ssh mathe@35.247.243.116
+ssh mathe@35.247.243.116 / 
 
-git -C /home/mathe/api
+'cd api'/
 
-git pull origin main
+'git pull origin main'/
 
-pm2 restart server 
+'pm2 restart server'/
 
-sudo systemctl restart nginx
+'sudo systemctl restart nginx'

@@ -1,5 +1,6 @@
 import Aluno from '../models/Aluno';
 import Foto from '../models/Foto';
+//teste21
 
 class AlunoController {
 	async index(req, res) {
