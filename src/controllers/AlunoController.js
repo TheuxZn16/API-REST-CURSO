@@ -1,6 +1,6 @@
 import Aluno from '../models/Aluno';
 import Foto from '../models/Foto';
- //teste
+
 class AlunoController {
 	async index(req, res) {
 		const alunos = await Aluno.findAll({

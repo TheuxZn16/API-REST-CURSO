@@ -12,13 +12,9 @@ git commit -m "$commit"
 
 git push origin main
 
-eval `ssh-agent`
-
-ssh-add ~/.ssh/id_rsa
-
 ssh mathe@35.247.243.116
 
-cd api
+git -C /home/mathe/api
 
 git pull origin main
 
