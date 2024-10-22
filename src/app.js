@@ -5,11 +5,27 @@ import { resolve } from 'node:path';
 import './db';
 
 import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+
 import homeRoutes from './routes/homeRoutes';
 import userRoutes from './routes/userRoutes';
 import tokenRoutes from './routes/tokenRoutes';
 import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
+import { error } from 'node:console';
+
+const whitelist = ['http://35.247.243.116', 'http://localhost:3001'];
+
+const corsOptions = {
+	origin: (origin, cb) => {
+		if (whitelist.indexOf(origin) !== -1 || !origin) {
+			cb(null, true);
+		} else {
+			cb(new Error('Not allowed by CORS'));
+		}
+	},
+};
 
 class App {
 	constructor() {
@@ -18,6 +34,8 @@ class App {
 		this.routes();
 	}
 	middlewares() {
+		this.app.use(corsOptions);
+		this.app.use(helmet);
 		this.app.use(express.urlencoded({ extended: true }));
 		this.app.use(express.json());
 		this.app.use(
