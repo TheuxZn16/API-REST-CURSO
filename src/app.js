@@ -15,7 +15,11 @@ import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 import { error } from 'node:console';
 
-const whitelist = ['http://35.247.243.116', 'http://localhost:3001'];
+const whitelist = [
+	'http://35.247.243.116',
+	'http://localhost:3001',
+	'https://pt.wikipedia.org',
+];
 
 const corsOptions = {
 	origin: (origin, cb) => {
