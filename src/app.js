@@ -14,11 +14,7 @@ import tokenRoutes from './routes/tokenRoutes';
 import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
-const whitelist = [
-	'http://35.247.243.116',
-	'http://localhost:3001',
-	'https://www.google.com.br',
-];
+const whitelist = ['http://35.247.243.116', 'http://localhost:3000'];
 
 const corsOptions = {
 	origin: (origin, cb) => {

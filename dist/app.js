@@ -14,11 +14,7 @@ var _tokenRoutes = require('./routes/tokenRoutes'); var _tokenRoutes2 = _interop
 var _alunoRoutes = require('./routes/alunoRoutes'); var _alunoRoutes2 = _interopRequireDefault(_alunoRoutes);
 var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopRequireDefault(_fotoRoutes);
 
-const whitelist = [
-	'http://35.247.243.116',
-	'http://localhost:3001',
-	'https://www.google.com.br',
-];
+const whitelist = ['http://35.247.243.116', 'http://localhost:3000'];
 
 const corsOptions = {
 	origin: (origin, cb) => {
