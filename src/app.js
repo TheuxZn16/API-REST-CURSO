@@ -17,7 +17,7 @@ import fotoRoutes from './routes/fotoRoutes';
 const whitelist = [
 	'http://35.247.243.116',
 	'http://localhost:3001',
-	'https://pt.wikipedia.org',
+	'https://www.google.com.br',
 ];
 
 const corsOptions = {
