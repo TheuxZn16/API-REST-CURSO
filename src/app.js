@@ -13,7 +13,6 @@ import userRoutes from './routes/userRoutes';
 import tokenRoutes from './routes/tokenRoutes';
 import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
-import { error } from 'node:console';
 
 const whitelist = [
 	'http://35.247.243.116',
@@ -38,7 +37,7 @@ class App {
 		this.routes();
 	}
 	middlewares() {
-		this.app.use(corsOptions);
+		this.app.use(cors(corsOptions));
 		this.app.use(helmet);
 		this.app.use(express.urlencoded({ extended: true }));
 		this.app.use(express.json());

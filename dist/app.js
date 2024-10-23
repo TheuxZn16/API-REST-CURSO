@@ -13,7 +13,6 @@ var _userRoutes = require('./routes/userRoutes'); var _userRoutes2 = _interopReq
 var _tokenRoutes = require('./routes/tokenRoutes'); var _tokenRoutes2 = _interopRequireDefault(_tokenRoutes);
 var _alunoRoutes = require('./routes/alunoRoutes'); var _alunoRoutes2 = _interopRequireDefault(_alunoRoutes);
 var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopRequireDefault(_fotoRoutes);
-var _nodeconsole = require('node:console');
 
 const whitelist = [
 	'http://35.247.243.116',
@@ -38,7 +37,7 @@ class App {
 		this.routes();
 	}
 	middlewares() {
-		this.app.use(corsOptions);
+		this.app.use(_cors2.default.call(void 0, corsOptions));
 		this.app.use(_helmet2.default);
 		this.app.use(_express2.default.urlencoded({ extended: true }));
 		this.app.use(_express2.default.json());
