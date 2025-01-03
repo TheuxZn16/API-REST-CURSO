@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+
 	"scripts": {
 		"dev": "nodemon dist/server.js",
 		"build": "sucrase ./src -d ./dist --transforms imports",

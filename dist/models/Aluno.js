@@ -38,7 +38,6 @@
 				},
 				idade: {
 					type: _sequelize2.default.INTEGER,
-					defaultValue: '',
 					validate: {
 						isInt: {
 							msg: 'A idade precisa ser um número inteiro',
@@ -47,7 +46,6 @@
 				},
 				peso: {
 					type: _sequelize2.default.FLOAT,
-					defaultValue: '',
 					validate: {
 						isInt: {
 							msg: 'O peso precisa ser um número inteiro ou de ponto flutuante',
@@ -56,7 +54,6 @@
 				},
 				altura: {
 					type: _sequelize2.default.FLOAT,
-					defaultValue: '',
 					validate: {
 						isInt: {
 							msg: 'A altura precisa ser um número inteiro ou de ponto flutuante',

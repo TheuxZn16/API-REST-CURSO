@@ -38,7 +38,6 @@ export default class Aluno extends Model {
 				},
 				idade: {
 					type: Sequelize.INTEGER,
-					defaultValue: '',
 					validate: {
 						isInt: {
 							msg: 'A idade precisa ser um número inteiro',
@@ -47,7 +46,6 @@ export default class Aluno extends Model {
 				},
 				peso: {
 					type: Sequelize.FLOAT,
-					defaultValue: '',
 					validate: {
 						isInt: {
 							msg: 'O peso precisa ser um número inteiro ou de ponto flutuante',
@@ -56,7 +54,6 @@ export default class Aluno extends Model {
 				},
 				altura: {
 					type: Sequelize.FLOAT,
-					defaultValue: '',
 					validate: {
 						isInt: {
 							msg: 'A altura precisa ser um número inteiro ou de ponto flutuante',
