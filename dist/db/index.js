@@ -11,10 +11,7 @@ const connection = new (0, _sequelize.Sequelize)(process.env.DATABASE_URL, {
 
 try {
 	connection.sync();
-	console.log('success');
-} catch (error) {
-	console.log('failure');
-}
+} catch (error) {}
 
 models.forEach((model) => model.init(connection));
 models.forEach(
